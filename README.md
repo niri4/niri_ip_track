@@ -11,7 +11,7 @@ This gem provides a simple and extremely flexible way to find your location from
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'niri_ip_track'
+gem "niri_ip_track", git: "https://github.com/niri4/niri_ip_track.git"
 ```
 
 And then execute:
