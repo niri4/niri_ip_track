@@ -12,7 +12,6 @@ module NiriIpTrack
       ip_call ="http://freegeoip.io/json/#{client_ip}"
       content = open(ip_call).read
       data=JSON.parse(content)
-      puts data
       return data
     end
   end
