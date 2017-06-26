@@ -11,15 +11,15 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   spec.summary       = %q{ Write a short summary, because Rubygems requires one.}
   spec.description   = %q{ Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/niri4/niri_ip_track"
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "'http://rubygems.org'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+  # if spec.respond_to?(:metadata)
+  #   spec.metadata['allowed_push_host'] = "'https://rubygems.org'"
+  # else
+  #   raise "RubyGems 2.0 or newer is required to protect against " \
+  #     "public gem pushes."
+  # end
 
   spec.files         = ["lib/niri_ip_track.rb"]
   # `git ls-files -z`.split("\x0").reject do |f|

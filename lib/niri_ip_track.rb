@@ -1,4 +1,5 @@
 require "niri_ip_track/version"
+require "niri_ip_track/railtie" if defined?(Rails)
 
 module NiriIpTrack
   class IpTrack
@@ -13,10 +14,6 @@ module NiriIpTrack
       data=JSON.parse(content)
       puts data
       return data
-    end
-
-    def self.awesome?
-      puts "you are awesome!!"
     end
   end
   # Your code goes here...
