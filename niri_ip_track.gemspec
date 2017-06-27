@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["niri4"]
   spec.email         = ["nirankarsingh247@gmail.com"]
   spec.license       = 'MIT'
-  spec.summary       = %q{ Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{ Write a longer description or delete this line.}
+  spec.summary       = %q{ This gem provides a simple and extremely flexible way to find your location from Ruby applications. It works well with Rack based web applications such as Ruby On Rails.}
+  spec.description   = %q{ This gem provides a simple and extremely flexible way to find your location from Ruby applications. It works well with Rack based web applications such as Ruby On Rails.}
   spec.homepage      = "https://github.com/niri4/niri_ip_track"
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
