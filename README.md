@@ -30,6 +30,27 @@ To find your location you have to require
     to get the ip request.remote.ip
     NiriIpTrack::IpTrack.locate_ip("YOUR IP HERE")
 
+To find your location response in json use the above mention
+
+To find your location response in xml formet use
+
+    require "niri_ip_track"
+
+    to get the ip request.remote.ip
+
+    NiriIpTrack::IpTrack.locate_ip_xml("YOUR IP HERE")
+
+To find your location response in csv formet use
+
+    require "niri_ip_track"
+
+    to get the ip request.remote.ip
+
+    NiriIpTrack::IpTrack.locate_ip_csv("YOUR IP HERE")
+
+
+
+
 ##Example
 
      NiriIpTrack::IpTrack.locate_ip("122.173.143.158")
@@ -37,6 +58,15 @@ To find your location you have to require
 
      {"ip"=>"122.173.143.158", "country_code"=>"IN", "country_name"=>"India", "region_code"=>"CH", "region_name"=>"Chandigarh", "city"=>"Chandigarh", "zip_code"=>"", "time_zone"=>"Asia/Kolkata", "latitude"=>30.7343, "longitude"=>76.7933, "metro_code"=>0}
 
+     NiriIpTrack::IpTrack.locate_xml("122.173.143.158")
+     it return the response in xml form
+
+     "<Response>\n\t<IP>122.173.143.158</IP>\n\t<CountryCode>IN</CountryCode>\n\t<CountryName>India</CountryName>\n\t<RegionCode>CH</RegionCode>\n\t<RegionName>Chandigarh</RegionName>\n\t<City>Chandigarh</City>\n\t<ZipCode></ZipCode>\n\t<TimeZone>Asia/Kolkata</TimeZone>\n\t<Latitude>30.7343</Latitude>\n\t<Longitude>76.7933</Longitude>\n\t<MetroCode>0</MetroCode>\n</Response>\n"
+
+     NiriIpTrack::IpTrack.locate_csv("122.173.143.158")
+     it return the response in csv form
+
+     "122.173.143.158,IN,India,CH,Chandigarh,Chandigarh,,Asia/Kolkata,30.7343,76.7933,0\r\n"
 <!-- TOdO: Write usage instructions here -->
 
 ## Development
